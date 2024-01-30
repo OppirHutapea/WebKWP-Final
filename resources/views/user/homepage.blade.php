@@ -252,7 +252,7 @@
       <div class="logo float-left">
         
         <!-- <h1 class="text-light"><a href="index.html"><span>Our-Compnay Associate</span></a></h1> -->
-        <a href="#faq"><img src="assets/img/logo_bersama.png" alt="" class="img-fluid"></a>
+        <a href="#faq"><img src="{{asset('assets/img/logo_bersama.png')}}" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block">
