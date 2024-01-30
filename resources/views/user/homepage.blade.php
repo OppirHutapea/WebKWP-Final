@@ -609,6 +609,30 @@
       </div>
     </section><!-- End of Pendaftaran -->
 
+    <section id="berita" class="berita">
+      <div class="container">
+          <div class="section-title">
+              <h2>Berita Terbaru</h2>
+          </div>
+          <div class="row">
+              @foreach($beritausers as $berita)
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="{{ asset('berita/' . $berita->gambar_berita) }}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title">{{ $berita->judul }}</h5>
+                          <p class="card-text">{{ $berita->deskripsi }}</p>
+                          <p class="card-text">Tanggal Publish: {{ $berita->tanggal_publikasi }}</p>
+                          <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+                      </div>
+                  </div>
+              </div>
+              @endforeach
+          </div>
+      </div>
+  </section>
+  
+  
     <!-- F&Q -->
     <section id="contact" class="contact">
       <div class="container">

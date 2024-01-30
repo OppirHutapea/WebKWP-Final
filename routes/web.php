@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\HomePageController;
 
 
 /*
@@ -15,9 +16,8 @@ use App\Http\Controllers\BeritaController;
 |
 */
 
-Route::get('/', function () {
-    return view('user.homepage');
-});
+Route::get('/', [HomePageController::class, 'index'])->name('user-homepage');
+
 
 Route::get('/admin-homepage', function () {
     return view('admin.admin-homepage');
