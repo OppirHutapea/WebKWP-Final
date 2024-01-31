@@ -9,11 +9,11 @@ body {
 }
 
 a {
-  color: #43aea0;
+  color: #0f84d8;
 }
 
 a:hover {
-  color: #00d3b8;
+  color: #1273c7;
   text-decoration: none;
 }
 
@@ -60,11 +60,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   z-index: 997;
   transition: all 0.5s;
   padding: 20px 0;
-  background: hwb(228 91% 7%);
+  background: hwb(210 96% 3%);
 }
 
 #header.header-scrolled {
-  background: #020a20;
+  background: hwb(210 96% 3%);
   height: 60px;
   padding: 10px 0;
 }
@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #d2ece9;
+  color: hwb(210 0% 99%);
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 14px;
@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #9cd5ce;
+  color: #070707;
   text-decoration: none;
 }
 
@@ -159,7 +159,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   font-size: 14px;
   font-weight: 500;
   text-transform: none;
-  color: #25564f;
+  color: hsl(171, 40%, 24%);
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
@@ -909,7 +909,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #203954;
+  background: #f0f2f4;
   padding: 30px 0;
   color: #fff;
   font-size: 14px;
@@ -927,7 +927,7 @@ section {
 }
 
 .text-secondary {
-  color: #3d5d6f;
+  color: rgb(255, 255, 255);
 }
 
 .fa,
