@@ -1,276 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- FontAwesome CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{asset('assets/css')}}">
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <title>KwP</title>
-  <meta name="author" content="Velile Vamba">
-  <meta content="" name="lorem100">
-  <meta content="" name="keywords">
-
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-  <link href="{{asset('vendor/animate.css/animate.min.css')}}" rel="stylesheet">
-  <link href="{{asset('vendor/icofont/icofont.min.css')}}" rel="stylesheet">
-  <link href="{{asset('vendor/venobox/venobox.css')}}" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/free.min.css">
-<link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/brand.min.css">
-<link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/flag.min.css">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-	<style type="text/css">
-		.carousel-item {
-		  height: 60vh;
-		  min-height: 350px;
-		  background: no-repeat center center scroll;
-		  -webkit-background-size: cover;
-		  -moz-background-size: cover;
-		  -o-background-size: cover;
-		  background-size: cover;
-		}
-
-    .main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.main .wrap {
-  margin: 2rem;
-
-  transform-style: preserve-3d;
-  transform: perspective(100rem);
-
-  cursor: pointer;
-}
-
-.main .container {
-  --rX: 0;
-  --rY: 0;
-  --bX: 50%;
-  --bY: 80%;
-
- 
-  border: 1px solid var(--background-color);
-  border-radius: 1.6rem;
-  padding: 4rem;
-
-  display: flex;
-  align-items: flex-end;
-
-  position: relative;
-  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
-
-  background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(32, 57, 84));
-  background-position: var(--bX) var(--bY);
-  background-size: 40rem auto;
-  box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%);
-
-  transition: transform .6s 1s;
-}
-
-.main .container::before,
-.main .container::after {
-  content: "";
-
-  width: 2rem;
-  height: 2rem;
-  border: 1px solid #fff;
-
-  position: absolute;
-  z-index: 2;
-
-  opacity: .6;
-  transition: .3s;
-}
-
-.main .container::before {
-  top: 2rem;
-  right: 2rem;
-
-  border-bottom-width: 0;
-  border-left-width: 0;
-}
-
-.main .container::after {
-  bottom: 2rem;
-  left: 2rem;
-
-  border-top-width: 0;
-  border-right-width: 0;
-}
-
-.main .container--active {
-  transition: none;
-}
-
-.main .container--2 {
-  filter: hue-rotate(80deg) saturate(140%);
-}
-
-.main .container--3 {
-  filter: hue-rotate(160deg) saturate(140%);
-}
-
-.main .container p {
-  color: hsla(0, 0%, 100%, .6);
-  font-size: 0.8rem;
-  text-align: left;
-}
-
-.main .wrap:hover .container::before,
-.main .wrap:hover .container::after {
-  width: calc(100% - 4rem);
-  height: calc(100% - 4rem);
-}
-
-.main .abs-site-link {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  color: hsla(0, 0%, 0%);
-  font-size: 1.6rem;
-} 
-
-/*****************************************/
-.solutions {
-  /* The image used */
-  background-image: url(assets/img/slider-2.jpg);
-
-  /* Set a specific height */
-  min-height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.solutions .wrapper{
-  width: 100%;
-  max-width: 100%;
-  margin: auto;
-}
-
-.solutions h1{
-  color: #fff;
-  font-weight: normal;
-  text-align: center;
-  font-size: 48px;
-}
-
-.solutions .panels{
-  list-style-type: none;
-  padding: 0;
-}
-
-.solutions .panels li{
-
-  margin: 0;
-  display: block;
-  box-sizing: border-box;
-  float: left;
-}
-
-.solutions .panels li div{
-  padding: 10% 0;
-  text-align: center;
-  color: #fff;
-  font-size: 11px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  height: 50vh;
-}
-
-/*// ANIMATION STYLES //*/
-
-.solutions .panels div.back {
-  transform: rotateY(90deg);
-}
-
-.solutions .panels div.front {
-  position: absolute;
-}
-
-.solutions .panels li:hover div.front {
-  animation: twirl 0.2s ease-in forwards;
-}
-.solutions .panels li:hover div.back {
-  animation: twirl 0.2s 0.2s ease-out forwards reverse;
-}
-
-@keyframes twirl {
-  0%{ transform: rotateY(0deg)}
-  100% {transform: rotateY(90deg)}
-}
-
-.why-us {
-  /* The image used */
-  background-image: url(assets/img/slider-2.jpg);
-
-  /* Set a specific height */
-  min-height: 350px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-	</style>
-</head>
-
-<body>
-
-  <header id="header" class="fixed-top">
-    <div class="container">
-
-      <div class="logo float-left">
-        
-        <!-- <h1 class="text-light"><a href="index.html"><span>Our-Compnay Associate</span></a></h1> -->
-        <a href="#faq"><img src="{{asset('assets/img/logo_bersama.png')}}" alt="" class="img-fluid"></a>
-      </div>
-
-      <nav class="nav-menu float-right d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#header">Home</a></li>
-          <li><a href="#about">Tentang Kami</a></li>
-          <li><a href="#services">Program</a></li>
-          <li><a href="#faq">Kerjasama</a></li>
-          <li><a href="#team">Panitia</a></li>
-		      <li><a href="#contact">F&Q</a></li>
-          <li><a href="#pendaftaran"> Pendaftaran</a></li>
-        </ul>
-            
-      </nav><!-- .nav-menu -->
-
-    </div>
-  </header><!-- End #header -->
-
+@include('user.header-user.header')
   <!-- ======= Hero Section ======= -->
   <section >
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -326,7 +54,7 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/Business.PNG" class="img-fluid" alt="">
+            <img src="{{asset('assets/img/Business.PNG')}}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
             <h3>Program Kolaborasi dan Kerjasama antara:</h3>
@@ -395,7 +123,7 @@
         <div class="text-center">
           
         <div class="section-title">
-          <h2 style="color: #fff;">Our approach</h2>
+          <h2 style="color: #fff;">Target Peserta</h2>
         </div>
 
           <p>
@@ -407,8 +135,8 @@
 <div class="container-fluid">
   <div class="col-md-12">
       <div class="row main">
-          <div class="wrap wrap--3 col-md-3">
-            <h6 style="color: #fff; text-align: left;">Maksud </h6>
+          <div class="wrap wrap--3 col-md-4">
+            <h6 style="color: #fff; text-align: left;">Peserta 1</h6>
               <div class="container container--3 ">
                   <p>
                     Maksud diselenggarakan Program Peningkatan Kapasitas Kewirausahaan Pemuda di Kawasan Destinasi Danau Toba adalah untuk menggali, 
@@ -416,9 +144,19 @@
                   </p>
               </div>
             </div>
+
+            <div class="wrap wrap--3 col-md-4">
+              <h6 style="color: #fff; text-align: left;">Peserta 2</h6>
+                <div class="container container--3 ">
+                    <p>
+                      Maksud diselenggarakan Program Peningkatan Kapasitas Kewirausahaan Pemuda di Kawasan Destinasi Danau Toba adalah untuk menggali, 
+                      mengembangkan, dan memajukan potensi kewirausahaan pemuda di Kawasan Danau Toba
+                    </p>
+                </div>
+              </div>
           
-            <div class="wrap wrap--3  col-md-3">
-              <h6 style="color: #fff; text-align: left;">Tujuan</h6>
+            <div class="wrap wrap--3  col-md-4">
+              <h6 style="color: #fff; text-align: left;">Peserta 3</h6>
               <div class="container container--3 ">
                 <p>
                   Maksud diselenggarakan Program Peningkatan Kapasitas Kewirausahaan Pemuda di Kawasan Destinasi Danau Toba adalah untuk menggali, 
@@ -427,8 +165,8 @@
               </div>
             </div>
           
-            <div class="wrap wrap--3 col-md-3">
-              <h6 style="color: #fff; text-align: left;">Luaran</h6>
+            <div class="wrap wrap--3 col-md-4">
+              <h6 style="color: #fff; text-align: left;">Peserta 4</h6>
               <div class="container container--3 ">
                 <p>
                   Maksud diselenggarakan Program Peningkatan Kapasitas Kewirausahaan Pemuda di Kawasan Destinasi Danau Toba adalah untuk menggali, 
@@ -508,86 +246,75 @@
     <section id="team" class="team">
       <div class="container" style="text-align: center;">
         <div class="section-title">
-          <h2>Panitia</h2>
-          <div class="about-section">
-            <p>Deskripsi Singkat</p>
+          <h2 style="font-weight: bold">Panitia</h2>
+          <h2 style="text-align:center">Pengarah</h2>
+          <div class="row justify-content-center"> <!-- Menengahkan row -->
+              <?php $count = 0; ?> <!-- Variabel hitung jumlah kartu Pengarah yang sudah ditampilkan -->
+              @foreach($panitias as $panitia)
+                  @if($panitia->jabatan == 'Pengarah' && $count < 2) <!-- Hanya tampilkan 2 kartu Pengarah -->
+                      <div class="column mx-auto"> <!-- Menengahkan column -->
+                          <div class="card">
+                              <img src="assets/img/LogoKementerian.png" alt="Jane" style="width:100%">
+                              <div class="container">
+                                  <h2>{{ $panitia->nama }}</h2>
+                                  <p class="title">{{ $panitia->jabatan }}</p>
+                                  <p>{{ $panitia->deskripsi }}</p>
+                                  <p>{{ $panitia->email }}</p>
+                              </div>
+                          </div>
+                      </div>
+                      <?php $count++; ?> <!-- Tingkatkan jumlah kartu Pengarah yang sudah ditampilkan -->
+                  @endif
+              @endforeach
+          </div>
+          <h2 class="py-3" style="text-align:center">Mentor</h2>
+          <div class="py-3 row justify-content-center">
+              <?php $count = 0; ?>
+              @foreach($panitias as $panitia)
+                  @if($panitia->jabatan == 'Mentor' && $count < 4)
+                      <div class="column mx-auto">
+                          <div class="card">
+                              <div style="height: 200px; overflow: hidden;"> <!-- CSS inline untuk container gambar -->
+                                  <img src="{{ asset('panitia/' . $panitia->foto) }}" alt="{{ $panitia->nama }}" style="width: 100%; height: auto;"> <!-- CSS inline untuk gambar -->
+                              </div>
+                              <div class="container">
+                                  <h2>{{ $panitia->nama }}</h2>
+                                  <p class="title">{{ $panitia->jabatan }}</p>
+                                  <p>{{ $panitia->deskripsi }}</p>
+                                  <p>{{ $panitia->email }}</p>
+                              </div>
+                          </div>
+                      </div>
+                      <?php $count++; ?>
+                  @endif
+              @endforeach
+
+              <h2 class="py-3" style="text-align:center">Fasilitator</h2>
+              <div class="py-3 row justify-content-center">
+                  <?php $count = 0; ?>
+                  @foreach($panitias as $panitia)
+                      @if($panitia->jabatan == 'Fasilitator' && $count < 4)
+                          <div class="column mx-auto">
+                              <div class="card">
+                                  <div style="height: 200px; overflow: hidden;"> <!-- CSS inline untuk container gambar -->
+                                      <img src="{{ asset('panitia/' . $panitia->foto) }}" alt="{{ $panitia->nama }}" style="width: 100%; height: auto;"> <!-- CSS inline untuk gambar -->
+                                  </div>
+                                  <div class="container">
+                                      <h2>{{ $panitia->nama }}</h2>
+                                      <p class="title">{{ $panitia->jabatan }}</p>
+                                      <p>{{ $panitia->deskripsi }}</p>
+                                      <p>{{ $panitia->email }}</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <?php $count++; ?>
+                      @endif
+                  @endforeach
+          </div>          
+          
+         
           </div>
           
-          <h2 style="text-align:center">Our Team</h2>
-          <div class="row">
-            <div class="column">
-              <div class="card">
-                <img src="assets/img/LogoKementerian.png" alt="Jane" style="width:100%">
-                <div class="container">
-                  <h2>Oppir Hutapea</h2>
-                  <p class="title">Mentor</p>
-                  <p>Semangat</p>
-                  <p>oppir@gmail.com</p>
-                </div>
-              </div>
-            </div>
-          
-            <div class="column">
-              <div class="card">
-                <img src="assets/img/LogoKementerian.png" alt="Mike" style="width:100%">
-                <div class="container">
-                  <h2>Oppir Hutapea</h2>
-                  <p class="title">Mentor</p>
-                  <p>Semangat</p>
-                  <p>oppir@gmail.com</p>
-                </div>
-              </div>
-            </div>
-          
-            <div class="column">
-              <div class="card">
-                <img src="assets/img/ITDEL.png" alt="John" style="width:100%">
-                <div class="container">
-                  <h2>Oppir Hutapea</h2>
-                  <p class="title">Mentor</p>
-                  <p>Semangat</p>
-                  <p>oppir@gmail.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column">
-              <div class="card">
-                <img src="assets/img/oppir.png" alt="Jane" style="width:100%">
-                <div class="container">
-                  <h2>Oppir Hutapea</h2>
-                  <p class="title">Mentor</p>
-                  <p>Semangat</p>
-                  <p>oppir@gmail.com</p>
-                </div>
-              </div>
-            </div>
-          
-            <div class="column">
-              <div class="card">
-                <img src="assets/img/oppir.png" alt="Mike" style="width:100%">
-                <div class="container">
-                  <h2>Oppir Hutapea</h2>
-                  <p class="title">Mentor</p>
-                  <p>Semangat</p>
-                  <p>oppir@gmail.com</p>
-                </div>
-              </div>
-            </div>
-          
-            <div class="column">
-              <div class="card">
-                <img src="assets/img/oppir.png" alt="John" style="width:100%">
-                <div class="container">
-                  <h2>Oppir Hutapea</h2>
-                  <p class="title">Mentor</p>
-                  <p>Semangat</p>
-                  <p>oppir@gmail.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section><!-- End Our Team Section -->
@@ -601,10 +328,56 @@
             yang lebih terfokus dan relevan sesuai dengan tingkat pengembangan usaha masing-masing peserta.
             Program ini diharapkan dapat menjadi katalisator bagi pertumbuhan dan kemandirian wirausaha pemuda di Danau Toba.
           </p>
-          <div class="text-center">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            <a href="https://forms.gle/WtMBkFbgWgqTipHs9/" target="_blank">Silahkan Klik Tautan berikut untuk mendaftar</a> </button>
-          </div>
+          <form action="#">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="option" id="option_dokumen" value="dokumen">
+                <label class="form-check-label" for="option_dokumen">
+                    Dokumen Pendaftaran
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="option" id="option_link" value="link">
+                <label class="form-check-label" for="option_link">
+                    Link Pendaftaran
+                </label>
+            </div>
+        </form>
+        
+        <div id="dokumen_section" style="display: none;">
+            <a href="{{ route('download.dokumen') }}" class="btn btn-primary">Download Dokumen</a>
+        </div>
+        
+        <div id="link_section" style="display: none;">
+            <a href="https://forms.gle/WtMBkFbgWgqTipHs9/" target="_blank">Silahkan Klik Tautan berikut untuk mendaftar</a>
+        </div>
+        
+        <script>
+            // Mendapatkan elemen radio button
+            var optionDokumen = document.getElementById('option_dokumen');
+            var optionLink = document.getElementById('option_link');
+        
+            // Mendapatkan elemen section
+            var dokumenSection = document.getElementById('dokumen_section');
+            var linkSection = document.getElementById('link_section');
+        
+            // Menambahkan event listener untuk setiap radio button
+            optionDokumen.addEventListener('change', function() {
+                if (this.checked) {
+                    // Menampilkan section dokumen dan menyembunyikan section link
+                    dokumenSection.style.display = 'block';
+                    linkSection.style.display = 'none';
+                }
+            });
+        
+            optionLink.addEventListener('change', function() {
+                if (this.checked) {
+                    // Menampilkan section link dan menyembunyikan section dokumen
+                    dokumenSection.style.display = 'none';
+                    linkSection.style.display = 'block';
+                }
+            });
+        </script>
+        
         </div>
       </div>
     </section><!-- End of Pendaftaran -->
@@ -612,7 +385,7 @@
     <section id="berita" class="berita">
       <div class="container">
           <div class="section-title">
-              <h2>Berita Terbaru</h2>
+              <h2 style="font-weight: bold">Berita Terbaru</h2>
           </div>
           <div class="row">
               @foreach($beritausers as $berita)
@@ -620,24 +393,47 @@
                   <div class="card">
                       <img src="{{ asset('berita/' . $berita->gambar_berita) }}" class="card-img-top" alt="...">
                       <div class="card-body">
-                          <h5 class="card-title">{{ $berita->judul }}</h5>
-                          <p class="card-text">{{ $berita->deskripsi }}</p>
+                          <h5 style="color:black; font-weight: bold" class="card-title">{{ $berita->judul }}</h5>
                           <p class="card-text">Tanggal Publish: {{ $berita->tanggal_publikasi }}</p>
-                          <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#detailBerita{{$berita->id}}">
+                              Baca Selengkapnya
+                          </button>
                       </div>
                   </div>
               </div>
+  
+              <!-- Modal for each news -->
+              <div class="modal fade" id="detailBerita{{$berita->id}}" tabindex="-1" role="dialog" aria-labelledby="detailBerita{{$berita->id}}Label" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 style="color:black; font-weight: bold" class="modal-title" id="detailBerita{{$berita->id}}Label">{{ $berita->judul }}</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                              <img src="{{ asset('berita/' . $berita->gambar_berita) }}" class="img-fluid" alt="{{ $berita->judul }}">
+                              <h6 style="color:black; font-weight: bold">Deskripsi Berita:</h6>
+                              <p style="color:black">{{ $berita->isi }}</p>
+                              <p>Tanggal Publish: {{ $berita->tanggal_publikasi }}</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- End of Modal -->
               @endforeach
           </div>
       </div>
   </section>
   
   
+  
     <!-- F&Q -->
     <section id="contact" class="contact">
       <div class="container">
         <div class="section-title">
-          <h2> F & Q</h2>
+          <h2 style="font-weight: bold"> F & Q</h2>
         </div>
         <section class="container my-5" id="maincontent">
           <section id="accordion">
@@ -750,28 +546,4 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Website KwP</span></strong>. Team
-      </div>
-      
-    </div>
-  </footer><!-- End #footer -->
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+@include('user.footer-user.footer')

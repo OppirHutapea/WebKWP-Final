@@ -19,9 +19,15 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/admin-panitia">
+        <a class="nav-link" href="{{ route('admin-panitia') }}">
           <i class="menu-icon mdi mdi-account-circle-outline"></i>
           <span class="menu-title">Panitia</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route('documents.index') }}">
+          <i class="menu-icon mdi mdi-pen"></i>
+          <span class="menu-title">Dokumen Persetujuan</span>
         </a>
       </li>
       <li class="nav-item nav-category">pages</li>
