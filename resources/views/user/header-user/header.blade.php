@@ -43,7 +43,7 @@
 		.carousel-item {
 		  height: 60vh;
 		  min-height: 350px;
-		  background: no-repeat center center scroll;
+		 background: no-repeat center center scroll;
 		  -webkit-background-size: cover;
 		  -moz-background-size: cover;
 		  -o-background-size: cover;
@@ -51,11 +51,11 @@
 		}
 
     .main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
 
 .main .wrap {
   margin: 2rem;
@@ -252,29 +252,30 @@
       <div class="logo float-left">
         
         <!-- <h1 class="text-light"><a href="index.html"><span>Our-Compnay Associate</span></a></h1> -->
-        <a href="/"><img src="{{asset('assets/img/logo_bersama.png')}}" alt="" class="img-fluid"></a>
+        <a href="/"><img src="{{asset('assets/img/logokerjasama.png')}}" alt="" class="img-fluid"></a>
       </div>
 
-      <nav class="nav-menu float-right d-none d-lg-block">
+      <nav class="nav-menu float-right d-none d-lg-block" >
         <ul>
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="#services">Program</a></li>
-          <li><a href="#faq">Kerjasama</a></li>
-          <li><a href="#team">Panitia</a></li>
-          <li><a href="#about">Tentang Kami</a></li>
-		  <li><a href="#contact">F&Q</a></li>
+          <li class="active"><a href="/" style="color:blue;">Home</a></li>
+          <li><a href="#services" style="color:blue;">Program</a></li>
+          <li><a href="#faq" style="color:blue;">Kerjasama</a></li>
+          <li><a href="#team"style="color:blue;">Panitia</a></li>
+<!--          <li><a href="#about">Tentang Kami</a></li> -->
+		  <li><a href="#contact" style="color:blue;">FAQ</a></li>
 		   <!-- Tautan Dropdown "Kontak Kami" -->
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kontak Kami <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:blue;">Kontak Kami <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <!-- Opsi "Hubungi via Email" -->
-                    <li><a href="#" onclick="contactViaEmail()">Hubungi via Email</a></li>
+                    <li><a href="#" onclick="contactViaEmail()" style="color:blue;">Hubungi via Email</a></li>
                     <!-- Opsi "Hubungi via WhatsApp" -->
-                    <li><a href="#" onclick="contactViaWhatsApp()">Hubungi via WhatsApp</a></li>
+                    <li><a href="#" onclick="contactViaWhatsApp()" style="color:blue;">Hubungi via WhatsApp</a></li>
+                    <li><a href="#" onclick="sosmedInstagram()" style="color:blue;">Sosial Media</a></li>
                 </ul>
             </li>
-		      <li><a href="/galeri">Galeri</a></li>
-          <li><a href="#pendaftaran"> Pendaftaran</a></li>
+		      <li><a href="/galeri" style="color:blue;">Galeri</a></li>
+          <li><a href="#pendaftaran" style="color:blue;"> Pendaftaran</a></li>
         </ul>
             
       </nav><!-- .nav-menu -->
@@ -288,17 +289,19 @@
         // Fungsi untuk menghubungi via email
         function contactViaEmail() {
             // Gantikan tautan dengan tautan email Anda
-            window.location.href = "mailto:marcellinoknl@gmail.com";
+            window.location.href = "mailto:kwp.dtb@gmail.com";
         }
 
         // Fungsi untuk menghubungi via WhatsApp
         function contactViaWhatsApp() {
-            // Gantikan nomor WhatsApp dengan nomor WhatsApp Anda
-            var phoneNumber = "6281311836583";
-            // Buat tautan WhatsApp
-            var whatsappLink = "https://api.whatsapp.com/send?phone=" + phoneNumber;
-            // Buka tautan WhatsApp di jendela baru
+            // Bitly link for WhatsApp
+            var whatsappLink = "https://bit.ly/wag-kwptoba";
+            // Open the Bitly link in a new window
             window.open(whatsappLink);
+        }
+        function sosmedInstagram(){
+            var sosmedIgLink = "https://www.instagram.com/kwpdanautoba/";
+            window.open(sosmedIgLink);
         }
     </script>
     </div>

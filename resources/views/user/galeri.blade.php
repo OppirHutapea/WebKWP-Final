@@ -4,41 +4,28 @@
     <h1 style="margin-top: 100px;">Galeri</h1>
     <div class="row py-3">
         <div class="col-md-4 mb-4"> <!-- Menambahkan class col-md-4 untuk membuat 3 gambar per baris pada tampilan desktop -->
-            <img src="{{asset('assets/img/Business.PNG')}}" alt="Gambar 1" class="img-fluid rounded-lg" data-toggle="modal" data-target="#gambarModal1"> <!-- Menambahkan data-toggle dan data-target untuk mengaktifkan modal -->
+            <img src="{{asset('assets/img/imag1.jpg')}}" alt="Gambar 1" class="img-fluid rounded-lg" data-toggle="modal" data-target="#gambarModal1"> <!-- Menambahkan data-toggle dan data-target untuk mengaktifkan modal -->
         </div>
         <div class="col-md-4 mb-4">
-            <img src="{{asset('assets/img/Business.PNG')}}" alt="Gambar 2" class="img-fluid rounded-lg" data-toggle="modal" data-target="#gambarModal2">
+            <img src="{{asset('assets/img/img2.jpg')}}" alt="Gambar 2" class="img-fluid rounded-lg" data-toggle="modal" data-target="#gambarModal2">
         </div>
         <div class="col-md-4 mb-4">
-            <img src="{{asset('assets/img/Business.PNG')}}" alt="Gambar 3" class="img-fluid rounded-lg" data-toggle="modal" data-target="#gambarModal3">
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-4 mb-4">
-            <img src="{{asset('assets/img/Business.PNG')}}" alt="Gambar 4" class="img-fluid rounded-lg" data-toggle="modal" data-target="#gambarModal4">
-        </div>
-        <div class="col-md-4 mb-4">
-            <img src="{{asset('assets/img/Business.PNG')}}" alt="Gambar 5" class="img-fluid rounded-lg" data-toggle="modal" data-target="#gambarModal5">
-        </div>
-        <div class="col-md-4 mb-4">
-            <img src="{{asset('assets/img/Business.PNG')}}" alt="Gambar 6" class="img-fluid rounded-lg" data-toggle="modal" data-target="#gambarModal6">
+            <img src="{{asset('assets/img/img3.jpg')}}" alt="Gambar 3" class="img-fluid rounded-lg" data-toggle="modal" data-target="#gambarModal3">
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-4 mb-4">
-            <img src="{{asset('assets/img/Business.PNG')}}" alt="Gambar 7" class="img-fluid rounded-lg" data-toggle="modal" data-target="#gambarModal7">
+            <img src="{{asset('assets/img/img4.jpg')}}" alt="Gambar 4" class="img-fluid rounded-lg" data-toggle="modal" data-target="#gambarModal4">
         </div>
         <div class="col-md-4 mb-4">
-            <img src="{{asset('assets/img/Business.PNG')}}" alt="Gambar 8" class="img-fluid rounded-lg" data-toggle="modal" data-target="#gambarModal8">
+            <img src="{{asset('assets/img/img5.jpg')}}" alt="Gambar 5" class="img-fluid rounded-lg" data-toggle="modal" data-target="#gambarModal5">
         </div>
         <div class="col-md-4 mb-4">
-            <img src="{{asset('assets/img/Business.PNG')}}" alt="Gambar 9" class="img-fluid rounded-lg" data-toggle="modal" data-target="#gambarModal9">
+            <img src="{{asset('assets/img/img6.jpg')}}" alt="Gambar 6" class="img-fluid rounded-lg" data-toggle="modal" data-target="#gambarModal6">
         </div>
     </div>
 </div>
-
 @include('user.footer-user.footer')
 
 <!-- Modals -->
@@ -46,7 +33,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <img src="{{asset('assets/img/Business.PNG')}}" class="img-fluid">
+                <img src="{{asset('assets/img/imag1.jpg')}}" class="img-fluid">
             </div>
         </div>
     </div>
@@ -56,7 +43,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <img src="{{asset('assets/img/Business.PNG')}}" class="img-fluid">
+                <img src="{{asset('assets/img/img2.jpg')}}" class="img-fluid">
             </div>
         </div>
     </div>
@@ -66,7 +53,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <img src="{{asset('assets/img/Business.PNG')}}" class="img-fluid">
+                <img src="{{asset('assets/img/img3.jpg')}}" class="img-fluid">
             </div>
         </div>
     </div>
@@ -76,7 +63,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <img src="{{asset('assets/img/Business.PNG')}}" class="img-fluid">
+                <img src="{{asset('assets/img/img4.jpg')}}" class="img-fluid">
             </div>
         </div>
     </div>
@@ -86,7 +73,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <img src="{{asset('assets/img/Business.PNG')}}" class="img-fluid">
+                <img src="{{asset('assets/img/img5.jpg')}}" class="img-fluid">
             </div>
         </div>
     </div>
@@ -96,7 +83,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <img src="{{asset('assets/img/Business.PNG')}}" class="img-fluid">
+                <img src="{{asset('assets/img/img5.jpg')}}" class="img-fluid">
             </div>
         </div>
     </div>
@@ -106,7 +93,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <img src="{{asset('assets/img/Business.PNG')}}" class="img-fluid">
+                <img src="{{asset('assets/img/img6.jpg')}}" class="img-fluid">
             </div>
         </div>
     </div>

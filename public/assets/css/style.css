@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 #header.header-scrolled {
-  background: #020a20;
+  background: #ffffff;
   height: 60px;
   padding: 10px 0;
 }
@@ -387,6 +387,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
   p{
     font-size: 13px;
+    color : blue;
   }
 
   .panels p{
@@ -395,6 +396,8 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
   .lead {
       font-size: 0.9rem;
+      margin-top: 10px; /* Adjust the top margin */
+      padding-left: 20px;
   }
 
   .display-4 {
@@ -429,6 +432,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 section {
   padding: 60px 0;
 }
+
 
 .section-bg, .section-bg a, .section-bg h2 {
   background-color: #203954;
@@ -1016,4 +1020,27 @@ a.text-secondary:hover {
     width: 100%;
     display: block;
   }
+}
+
+#timer {  
+  font-size: 3em;
+  font-weight: 100;
+  color: white;
+  text-shadow: 0 0 20px #48C8FF;
+  
+  div {
+    display: inline-block;
+    min-width: 90px;
+    
+    span {
+      color: #B1CDF1;
+      display: block;
+      font-size: .35em;
+      font-weight: 400;
+    }
+  }
+  text-align: center;
+  padding: 70px 50px;
+  background: #0D1A29;
+  font-family: "Helvetica Neue", "Open Sans", helvetica, arial, sans-serif; 
 }

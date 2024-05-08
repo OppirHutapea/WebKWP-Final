@@ -1,11 +1,12 @@
 <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Website KwP</span></strong>. Team
+        &copy; Copyright <strong><span>Website KwP</span></strong>
+        <a href="https://www.instagram.com/kwpdanautoba/" target="_blank" class="fa fa-instagram"></a>
       </div>
       
     </div>
-  </footer><!-- End #footer -->
+ </footer><!-- End #footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
@@ -19,6 +20,25 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+  background: #203954;
+  color: white;
+}
+</style>
 
 </body>
 
